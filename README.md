@@ -1,3 +1,5 @@
+<img src="https://github.com/mahyarmohammadimatin/OS_multiTasking_Timing_Simulation/blob/main/52.jpg">
+
 ## Overview
 I have chosen the Multi-Tasking algorithm (concurrency of processes) from among the operating system algorithms. Previously, I found the idea of the operating system handling tasks concurrently fascinating, so this time, I decided to implement this algorithm myself. In this project, both parallelization and concurrency are implemented. Parallelization means that one CPU core switches between tasks so quickly that we think they are all running simultaneously. However, concurrency means assigning multiple CPU cores to handle tasks concurrently.
 
@@ -57,7 +59,7 @@ Monitor task progress and execution times.
 Through the code written above, we get the average time needed to solve fixed tasks by the CPU under different conditions. Once we set the CPUs in terms of the number of cores equal to the numbers 1, 2, 5, 10, 20 and 50. 
 Once we change the degree of dependence of the processes on each other in the range of 0 to 1.
 
-<img src="">
+<img src="https://github.com/mahyarmohammadimatin/OS_multiTasking_Timing_Simulation/blob/main/50.jpg">
 
 As evident, the more processes are interdependent, the less effective adding more cores becomes. This is because the potential for parallelization
 diminishes, and some cores remain idle while waiting for tasks to become available. Although it seems that the execution time for processes takes
@@ -74,6 +76,6 @@ It defines a formula to calculate the maximum speedup, taking into account the f
 
 Amdahl's Law emphasizes that no matter how many processors you add, if a significant portion of the program cannot be parallelized (i.e., is inherently sequential), the overall speedup will be limited.
 
-<img src="">
+<img src="https://github.com/mahyarmohammadimatin/OS_multiTasking_Timing_Simulation/blob/main/51.jpg">
 
 This diagram analogous to Amdahl's Law, which states that simply doubling the number of CPU cores does not necessarily lead to a 50% increase in performance. Instead, it depends on the value of "S," which represents the degree of interdependence among processes.
